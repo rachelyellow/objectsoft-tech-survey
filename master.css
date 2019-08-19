@@ -12,11 +12,15 @@ header {
 h1 {
   padding: 1.8rem;
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 form {
   min-height: calc(100vh - 120px);
+}
+
+.form-label {
+  margin-top: 1rem;
 }
 
 #submit-button {
@@ -35,7 +39,7 @@ form {
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-radius: .3rem .3rem 0 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 5px;
   color: white;
 }
@@ -64,6 +68,13 @@ textarea {
   width: 95%;
   height: 80px;
   padding: .5rem .8rem;
+  border: 1px solid #ccc;
+  font-size: .8rem;
+}
+
+select {
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
 img {
@@ -76,4 +87,15 @@ img {
 
 footer {
   height: 120px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  footer img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
