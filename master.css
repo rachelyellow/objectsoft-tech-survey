@@ -2,6 +2,10 @@ header {
   height: 120px;
 }
 
+form {
+  min-height: calc(100vh - 160px);
+}
+
 .card {
   width: 80%;
   margin: 3rem auto;
@@ -49,5 +53,5 @@ img {
 }
 
 footer {
-  height: 160px;
+  height: 140px;
 }
