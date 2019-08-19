@@ -1,29 +1,48 @@
+body {
+  color: #0d577a !important;
+  font-family: 'Raleway', sans-serif !important;
+}
+
 header {
-  height: 120px;
+  height: 8.5rem;
+  color: #1a74bb;
+  background-color: #f2f7fa;
+}
+
+h1 {
+  padding: 1.8rem;
+  margin: auto;
+  font-size: 2rem;
 }
 
 form {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 120px);
+}
+
+#submit-button {
+  width: 85px;
+  margin: auto;
 }
 
 .card {
-  width: 80%;
+  width: 85%;
   margin: 3rem auto;
 }
 
 .section-header {
-  border: #1c4294;
-  background-color: #1c4294;
+  border: #0d577a;
+  background-color: #0d577a;
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-radius: .3rem .3rem 0 0;
+  margin-bottom: 3rem;
   padding: 5px;
   color: white;
 }
 
 .section-contents {
-  width: 80%;
-  margin: 2rem auto;
+  width: 85%;
+  margin: 0 auto 2rem;
   padding: 1rem;
 }
 
@@ -32,16 +51,19 @@ form {
 }
 
 .question {
-  margin: 3em auto;
+  margin: 1.5em auto 3em;
   border: 1px solid lightgray;
   padding: 2rem;
-  /* display: flex; */
+}
+
+span {
+  color: red;
 }
 
 textarea {
   width: 95%;
   height: 80px;
-  padding: .5rem;
+  padding: .5rem .8rem;
 }
 
 img {
@@ -53,5 +75,5 @@ img {
 }
 
 footer {
-  height: 140px;
+  height: 120px;
 }

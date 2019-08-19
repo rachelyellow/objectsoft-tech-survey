@@ -81,8 +81,11 @@ $(document).ready(function() {
       $(".alert-danger").show();
       clientInfo = {};
     }
+
+    const emailString = JSON.stringify(clientInfo);
     
     console.log(clientInfo);
+    console.log(emailString);
   })
 
   

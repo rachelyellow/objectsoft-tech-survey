@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
     <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./app.js"></script>
@@ -14,7 +15,7 @@
 
     <!-- INSERT HEADER CONTENTS HERE -->
     <header>
-      <h1>HEADER</h1>
+      <h1>Survey for Resolving Hiring Challenges</h1>
     </header>
     <!-- INSERT HEADER CONTENTS HERE -->
 
@@ -24,10 +25,10 @@
       Please fill in the required information.
     </div>
     <div class="alert alert-danger hidden" role="alert">
-      Please be sure to answer all the questions.
+      Please answer all questions.
     </div>
     <div class="alert alert-success hidden" role="alert">
-      Success!
+      Thank you for completing the survey.
     </div>
 
     <form id="info">
@@ -46,14 +47,14 @@
                       <!-- First name -->
                       <div class="md-form">
                           <input type="text" name="FirstName" class="form-control">
-                          <label for="FirstName">First name</label>
+                          <label for="FirstName">First name <span>*</span></label>
                       </div>
                   </div>
                   <div class="col">
                       <!-- Last name -->
                       <div class="md-form">
                           <input type="text" name="LastName" class="form-control">
-                          <label for="LastName">Last name</label>
+                          <label for="LastName">Last name <span>*</span></label>
                       </div>
                   </div>
               </div>
@@ -61,13 +62,13 @@
               <!-- E-mail -->
               <div class="md-form mt-0">
                   <input type="email" name="Email" class="form-control">
-                  <label for="Email">E-mail</label>
+                  <label for="Email">E-mail <span>*</span></label>
               </div>
 
               <!-- Company -->
               <div class="md-form">
                   <input type="text" name="Company" class="form-control">
-                  <label for="Company">Company Name</label>
+                  <label for="Company">Company Name <span>*</span></label>
               </div>
             </div>
 
@@ -117,6 +118,10 @@
               <input class="form-check-input" type="checkbox" name="languages" value="R">
               <label class="form-check-label" for="R">R</label>
             </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="languages" value="Other">
+              <label class="form-check-label" for="Other">Other</label>
+            </div>
           </div>
 
 
@@ -149,6 +154,10 @@
                 <input class="form-check-input" type="checkbox" name="relational-db" value="Firebird">
                 <label class="form-check-label" for="Firebird">Firebird</label>
               </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="relational-db" value="Other">
+                <label class="form-check-label" for="Other">Other</label>
+              </div>
           </div>
           
           <!-- QUESTION 3 -->
@@ -172,6 +181,10 @@
                 <input class="form-check-input" type="checkbox" name="nosql-db" value="KDB">
                 <label class="form-check-label" for="KDB">KDB</label>
               </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="nosql-db" value="Other">
+                <label class="form-check-label" for="Other">Other</label>
+              </div>
           </div>
           
           <!-- QUESTION 4 -->
@@ -191,35 +204,33 @@
 
             <div class="hidden methodology" id="SDLC">
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-SDLC" value="RUP">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-SDLC" value="RUP">
                 <label class="form-check-label" for="RUP">RUP</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-SDLC" value="Waterfall">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-SDLC" value="Waterfall">
                 <label class="form-check-label" for="waterfall">Waterfall</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-SDLC" value="other">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-SDLC" value="other">
                 <label class="form-check-label" for="other">Other</label>
               </div>
             </div>
-
 
             <div class="hidden methodology" id="Agile">
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-Agile" value="Scrum">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-Agile" value="Scrum">
                 <label class="form-check-label" for="Scrum">Scrum</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-Agile" value="Kanban">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-Agile" value="Kanban">
                 <label class="form-check-label" for="Kanban">Kanban</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input methodology" type="radio" name="dev-methodology-Agile" value="other">
+                <input class="form-check-input methodology" type="checkbox" name="dev-methodology-Agile" value="other">
                 <label class="form-check-label" for="other">Other</label>
               </div>
             </div>
-
 
           </div>
 
@@ -229,21 +240,21 @@
             <h6 class="question-text">Enterprise Integration:</h6>
 
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="enterpriseIntegration" value="MQ">
+              <input class="form-check-input" type="checkbox" name="enterpriseIntegration" value="MQ">
               <label class="form-check-label" for="MQ">MQ</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="enterpriseIntegration" value="Kafka">
+              <input class="form-check-input" type="checkbox" name="enterpriseIntegration" value="Kafka">
               <label class="form-check-label" for="Kafka">Kafka</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="enterpriseIntegration" value="TIBCO">
+              <input class="form-check-input" type="checkbox" name="enterpriseIntegration" value="TIBCO">
               <label class="form-check-label" for="TIBCO">TIBCO</label>
             </div>
-
-              <!-- OTHER -->
-              <!-- OTHER -->
-              <!-- OTHER -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="enterpriseIntegration" value="Other">
+              <label class="form-check-label" for="Other">Other</label>
+            </div>
 
           </div>
 
@@ -253,21 +264,21 @@
             <h6 class="question-text">Business Intelligence Tools:</h6>
 
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="bi-tools" value="Tableau">
+              <input class="form-check-input" type="checkbox" name="bi-tools" value="Tableau">
               <label class="form-check-label" for="Tableau">Tableau</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="bi-tools" value="SAS">
+              <input class="form-check-input" type="checkbox" name="bi-tools" value="SAS">
               <label class="form-check-label" for="SAS">SAS</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="bi-tools" value="Salesforce">
+              <input class="form-check-input" type="checkbox" name="bi-tools" value="Salesforce">
               <label class="form-check-label" for="Salesforce">Salesforce</label>
             </div>
-
-              <!-- OTHER -->
-              <!-- OTHER -->
-              <!-- OTHER -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bi-tools" value="Other">
+              <label class="form-check-label" for="Other">Other</label>
+            </div>
               
           </div>
 
@@ -277,6 +288,10 @@
             <h6 class="question-text">Big Data Components:</h6>
 
             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bigdata-components" value="Flume">
+              <label class="form-check-label" for="Flume">Flume</label>
+            </div>
+            <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" name="bigdata-components" value="Hadoop">
               <label class="form-check-label" for="Hadoop">Hadoop</label>
             </div>
@@ -285,8 +300,24 @@
               <label class="form-check-label" for="Hive">Hive</label>
             </div>
             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bigdata-components" value="Nifi">
+              <label class="form-check-label" for="Nifi">Nifi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bigdata-components" value="Pig">
+              <label class="form-check-label" for="Pig">Pig</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bigdata-components" value="Scoop">
+              <label class="form-check-label" for="Scoop">Scoop</label>
+            </div>
+            <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" name="bigdata-components" value="Spark">
               <label class="form-check-label" for="Spark">Spark</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="bigdata-components" value="Other">
+              <label class="form-check-label" for="Other">Other</label>
             </div>
           </div>
 
@@ -307,10 +338,11 @@
                 <input class="form-check-input" type="checkbox" name="web-frameworks" value="JQuery">
                 <label class="form-check-label" for="JQuery">JQuery</label>
               </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="web-frameworks" value="Other">
+                <label class="form-check-label" for="Other">Other</label>
+              </div>
 
-              <!-- ETCETC -->
-              <!-- ETCETC -->
-              <!-- ETCETC -->
           </div>
 
           <!-- QUESTION 9 -->
@@ -325,25 +357,21 @@
                 <option id="hybrid" name="cloud-platform" value="Hybrid">Hybrid</option>
             </select>
 
-            <!-- ADD STUFF HERE -->
-            <!-- ADD STUFF HERE -->
-            <!-- ADD STUFF HERE -->
-
             <div class="hidden cloud-platform" id="Public">
               <div class="form-check form-check-inline">
-                <input class="form-check-input cloud-platform" type="radio" name="cloud-platform" value="AWS">
+                <input class="form-check-input cloud-platform" type="checkbox" name="cloud-platform" value="AWS">
                 <label class="form-check-label" for="AWS">AWS</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input cloud-platform" type="radio" name="cloud-platform" value="GCD">
+                <input class="form-check-input cloud-platform" type="checkbox" name="cloud-platform" value="GCD">
                 <label class="form-check-label" for="GCD">GCD</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input cloud-platform" type="radio" name="cloud-platform" value="MS">
+                <input class="form-check-input cloud-platform" type="checkbox" name="cloud-platform" value="MS">
                 <label class="form-check-label" for="MS">MS</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input cloud-platform" type="radio" name="cloud-platform" value="other">
+                <input class="form-check-input cloud-platform" type="checkbox" name="cloud-platform" value="other">
                 <label class="form-check-label" for="other">Other</label>
               </div>
             </div>
@@ -356,21 +384,30 @@
             <h6 class="question-text">Open-source Frameworks:</h6>
 
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="open-source" value="Spring">
-              <label class="form-check-label" for="Spring">Spring</label>
+              <input class="form-check-input" type="checkbox" name="open-source" value="Git">
+              <label class="form-check-label" for="Git">Git</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" name="open-source" value="Hibernate">
               <label class="form-check-label" for="Hibernate">Hibernate</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="open-source" value="Git">
-              <label class="form-check-label" for="Git">Git</label>
+              <input class="form-check-input" type="checkbox" name="open-source" value="Spring">
+              <label class="form-check-label" for="Spring">Spring</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="open-source" value="Struts">
+              <label class="form-check-label" for="Struts">Struts</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="open-source" value="Rails">
+              <label class="form-check-label" for="Rails">Rails</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="open-source" value="Other">
+              <label class="form-check-label" for="Other">Other</label>
             </div>
 
-            <!-- ADD MORE STUFF HERE -->
-            <!-- ADD MORE STUFF HERE -->
-            <!-- ADD MORE STUFF HERE -->
           </div>
 
           <!-- QUESTION 11 -->
@@ -390,16 +427,17 @@
                 <input class="form-check-input" type="checkbox" name="devops" value="Kubernetes">
                 <label class="form-check-label" for="Kubernetes">Kubernetes</label>
               </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="devops" value="Other">
+                <label class="form-check-label" for="Other">Other</label>
+              </div>
     
-              <!-- ADD MORE STUFF HERE -->
-              <!-- ADD MORE STUFF HERE -->
-              <!-- ADD MORE STUFF HERE -->
           </div>
 
           <!-- QUESTION 12 -->
           
           <div id="question12" class="question">
-            <h6 class="question-text">Please state any "Other" technologies not listed here.</h6>
+            <h6 class="question-text">Please state any "Other" technologies not listed here. <span>*</span></h6>
 
             <textarea name="other-technologies" placeholder="If you did not answer `Other` to any of the above questions, please enter N/A."></textarea>
           </div>
@@ -407,12 +445,14 @@
           <!-- QUESTION 13 -->
 
           <div id="question13" class="question">
-            <h6 class="question-text">Describe in words your ideal candidate:</h6>
+            <h6 class="question-text">Describe in words your ideal candidate. <span>*</span></h6>
 
             <textarea name="candidate-description" placeholder="Add your description here..."></textarea>
           </div>
 
-          <button id="submit-button" class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">SUBMIT</button>
+          <div id="submit-button">
+            <button class="btn btn-outline-primary btn-rounded waves-effect z-depth-0" type="submit">SUBMIT</button>
+          </div>
 
         </div>
 
