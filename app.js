@@ -59,7 +59,7 @@ $(document).ready(function() {
  
     let rawData = $("#info").serializeArray();
 
-    let clientInfo = {...cloudPlatform}
+    let clientInfo = {...cloudPlatform};
 
     rawData.forEach(element => {
       if (!clientInfo[element.name]) {
