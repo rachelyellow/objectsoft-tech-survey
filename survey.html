@@ -192,11 +192,26 @@
           <div id="question4" class="question">
             <label for="methodology"><h6 class="question-text">Development Methodology:&emsp;</h6></label>
 
-            <select id="methodology">
+            <div id="methodology">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dev-methodology" id="dev-methodology1" value="Agile">
+                <label class="form-check-label" for="dev-methodology1">
+                  Agile
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dev-methodology" id="dev-methodology2" value="SDLC">
+                <label class="form-check-label" for="dev-methodology2">
+                  SDLC
+                </label>
+              </div>
+            </div>
+
+            <!-- <select id="methodology">
                 <option name="dev-methodology" selected disabled>--Please choose an option--</option>
                 <option name="dev-methodology" value="Agile">Agile</option>
                 <option name="dev-methodology" value="SDLC">SDLC</option>
-            </select>
+            </select> -->
 
             <!-- ADD STUFF HERE -->
             <!-- ADD STUFF HERE -->
@@ -350,12 +365,27 @@
           <div id="question9" class="question">
             <label for="cloud-platform"><h6 class="question-text">Cloud Platform:&emsp;</h6></label>
 
-            <select id="cloud-platform">
-                <option selected disabled>--Please choose an option--</option>
-                <option id="private" name="cloud-platform" value="Private">Private</option>
-                <option id="public" name="cloud-platform" value="Public">Public</option>
-                <option id="hybrid" name="cloud-platform" value="Hybrid">Hybrid</option>
-            </select>
+            <div id="cloud-platform">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cloud-platform" id="cloud-platform1" value="Private">
+                <label class="form-check-label" for="cloud-platform1">
+                  Private
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cloud-platform" id="cloud-platform2" value="Public">
+                <label class="form-check-label" for="cloud-platform2">
+                  Public
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cloud-platform" id="cloud-platform2" value="Hybrid">
+                <label class="form-check-label" for="cloud-platform2">
+                  Hybrid
+                </label>
+              </div>
+            </div>
+
 
             <div class="hidden cloud-platform" id="Public">
               <div class="form-check form-check-inline">

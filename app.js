@@ -28,6 +28,7 @@ $(document).ready(function() {
     switch (e.target.value) {
       case "Public":
         $("#Public").show();
+        delete cloudPlatform['cloud-platform'];
         break;
 
       case "Private":
@@ -69,6 +70,9 @@ $(document).ready(function() {
         clientInfo[element.name] += element.value;
       }
     });
+
+    delete clientInfo['dev-methodology'];
+
 
     if (Object.keys(clientInfo).length === 17 && !Object.values(clientInfo).includes("")) {
       $(".alert-info").hide();
