@@ -58,13 +58,17 @@ form {
 }
 
 .question {
-  margin: 1.5em auto 3em;
+  margin: 2em auto 2em;
   border: 1px solid lightgray;
   padding: 2rem;
 }
 
 .hidden {
   margin-top: 1rem;
+}
+
+hr {
+  visibility: hidden;
 }
 
 span {
@@ -107,8 +111,12 @@ footer {
   }
 
   .question {
-    margin: 1.5em auto 3em;
+    margin: 2em auto 2em;
     border: none;
     padding: 1rem 0;
+  }
+  
+  hr {
+  visibility: visible;
   }
 }
